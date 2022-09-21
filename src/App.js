@@ -1,6 +1,6 @@
 
 import './App.css';
-import {BrowserRouter, Route, Switch, NavLink } from 'react-router-dom'
+import {BrowserRouter, Route, Switch, NavLink, Redirect } from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -30,6 +30,9 @@ function App() {
      </Switch>
      <Route path="/articles/:id">
             <Article />    
+      </Route>
+      <Route path="*">
+        <Redirect to ="/" />
       </Route>
 
       </BrowserRouter>
