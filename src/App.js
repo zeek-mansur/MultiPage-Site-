@@ -31,7 +31,7 @@ function App() {
      <Route path="/articles/:id">
             <Article />    
       </Route>
-      
+
       </BrowserRouter>
      
     </div>
